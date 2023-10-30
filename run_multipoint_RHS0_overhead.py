@@ -222,8 +222,8 @@ def main(num_points, CL_constraints='vector'):
 if __name__ == '__main__':
     # compute the derivatives of the CL vector. This includes the RHS=0 overheads
     print('--- constraining CL vector ---')
-    main(2, CL_constraints='vector')
+    main(num_points=2, CL_constraints='vector')
 
     # now, compute the derivatives of each CL separately. This does not include the RHS=0 overheads
     print('--- constraining CL of each point ---')
-    main(2, CL_constraints='scalers')
+    main(num_points=2, CL_constraints='scalers')
